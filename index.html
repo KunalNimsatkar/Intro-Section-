@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+  <header>
+    <nav>
+      <div class="brand">
+        <img src="images/logo.svg">
+      </div>
+      <div class="menu-icon" style="display: none;">
+       <a href="#"><img src="images/icon-menu.svg"></a>
+      </div>
+        <div class="nav-ul-component">
+        <ul>
+          <li class="feature-component" id="component-list"><a href="#">Features   <img class="feature-arrow" src="images/icon-arrow-down.svg"></a>
+             <ul  class ="features-component-options">
+               <li><a href="#"><img src="images/icon-todo.svg">Todo list</a></li>
+               <li><a href="#"><img src="images/icon-calendar.svg">Calender</a></li>
+               <li><a href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
+               <li><a href="#"><img src="images/icon-planning.svg">Planning</a></li>
+             </ul>
+           </li>
+           <li class="company-component" id="component-list"><a href="#">Company   <img class="company-arrow" src="images/icon-arrow-down.svg"> </a>
+             <ul class="company-component-options">
+               <li><a href="#">History</a></li>
+               <li><a href="#">Our Team</a></li>
+               <li><a href="#">Blog</a></li>
+             </ul>
+            </li>
+
+            <li class="component"><a href="#">Careers</a></li>
+            <li class="component"><a href="#">About</a></li>
+         </ul>
+        </div>
+    <div class="btn">
+      <button class="login-btn">Login</button>
+      <button class="reg-btn">Register</button>
+    </div> 
+    </nav>
+</header>
+    <section class="hero-section">
+      <div class="hero-content">
+       <h1>Make <br> remote work</h1>
+       <p>Get your team in sync, no matter your location, streamline processes, create team rituals, and watch productivity soar.</p>
+       <div class="main-btn">
+       <button class="hero-btn">Learn more</button>         
+       </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/image-hero-desktop.png" id="hero-brand">
+      </div>
+    </section>
+      <div class="sponsors-container">
+        <img src="images/client-databiz.svg" id="databiz">
+        <img src="images/client-audiophile.svg" id="audiophile">
+        <img src="images/client-meet.svg" class="icon" id="meet">
+        <img src="images/client-maker.svg" id ="maker">
+      </div>
+
+
+
+
+
+  <script type="text/javascript" src="javascript.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kunal Nimsatkar</a>.
+  </div> -->
+</body>
+</html>
