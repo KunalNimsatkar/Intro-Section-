@@ -23,7 +23,6 @@ header{
 nav{
 	display: flex;
 	justify-content: space-between;
-	position: relative;
 }
 .brand{
 	padding-right: 3.5rem;
@@ -47,36 +46,36 @@ nav div ul{
 
 .features-component-options{
     position: absolute;
-    top: 2rem;
+    top: 4rem;
     cursor: pointer;
     border-radius: 7px;
-    left: 5rem;
+    left: 7rem;
     width: 140px;
-    height: 20vh;
+    height: 26vh;
     box-shadow: 1px 0px 10px -6px rgb(20 2 20);
     background-color: #fff;	
     padding: 16px 0px;
 }
 .company-component-options{
-	position: absolute;
+    position: absolute;
     border-radius: 7px;
     width: 128px;
-    height: 18vh;
-    top: 2rem;
-    left: 16rem;
+    height: 21vh;
+    top: 4rem;
+    left: 18.5rem;
     box-shadow: 1px 0px 10px -6px rgb(20 2 20);
     background-color: #fff;
     padding: 13px 22px;
-    line-height: 1.8rem;
+    line-height: 34px;
 }
 nav div.nav-ul-component ul li.feature-component ul.features-component-options li a{
-	font-size: 13px;
-	cursor: pointer;
-	padding: 18px;
-	line-height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 18px;
+    line-height: 32.5px;
 }
 nav div.nav-ul-component ul li.company-component ul.company-component-options li a{
-   font-size: 15px;
+   font-size: 14px;
    padding: 2px;
    cursor: pointer;
 }
@@ -144,7 +143,6 @@ section.hero-section{
 }
 .hero-content{
   width: 60%;
-	position: relative;
 }
 .hero-content h1{
   color: hsl(0, 0%, 8%);
@@ -176,6 +174,9 @@ section.hero-section{
 #hero-brand{
   display: block;
 }
+div#mobile-btn{
+  display: none;
+}
 #mobile-hero{
   display: none;
 }
@@ -197,6 +198,9 @@ section.hero-section{
 	background-color: hsl(0, 0%, 98%);
 	color: hsl(0, 0%, 8%);
 	border: 1px solid hsl(0, 0%, 8%);
+}
+.mobile-closeBtn{
+  display: none;
 }
 .sponsors-container{
 	position: absolute;
@@ -229,10 +233,10 @@ section.hero-section{
   body{
     width: 375px;
     height: 100vh;
-    font-size: 14px;
+    font-size: 12px;
   }
   header{
-    padding:0.5rem 0.7rem;
+    padding:0.6rem 0.8rem;
   }
   nav{
     width: 100%;
@@ -244,13 +248,80 @@ section.hero-section{
   .nav-ul-component{
     display: none;
   }
+  .nav-ul-component.mobileNav{
+    display: block;
+  }
+  .nav-ul-component ul{
+    width: 235px;
+    height: 100rem;
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: -23px;
+    bottom: 0;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    line-height: 3;
+  }
+  ul.feature-component-options.featureBtn li{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  ul.company-component-options.companyBtn li{
+    display: flex;
+    align-items: center;
+    padding: 0 ;
+    margin : 0;
+  }
+ul.features-component-options.featureBtn{
+    padding: 0;
+    margin: 0;
+    height: 33vh;
+    position: inherit;
+    width: 89%;
+    box-shadow: none;
+}
+ul.company-component-options.companyBtn{
+    padding: 1px 46px;
+    margin: 0;
+    width: 110%;
+    height: 24vh;
+    position: inherit;
+    box-shadow: none;
+}
   .menu-icon{
     display: block;
-    justify-content: space-between;
+    z-index: 3;
+  }
+  nav div.menu-icon a.menuBtn img.humBurger{
+    position: absolute;
+    top: 23px;
+    right: 10px;
   }
   .btn{
     display: none;
   }
+  div#mobile-btn{
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem; 
+}
+div#mobile-btn .login-btn{
+  background-color: #fff;
+  padding: 0;
+  padding-bottom :1rem;
+  margin-right: 20px;
+}
+div#mobile-btn .reg-btn{
+  width: 10rem ;
+
+}
   section.hero-section{
     display: flex;
     flex-direction: column-reverse;
@@ -265,6 +336,13 @@ section.hero-section{
   #mobile-hero{
     width: 100%;
     display: block;
+  }
+  div.mobile-closeBtn{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 34px;
+    right: 22px;
   }
   .hero-content{
   width: 100%;
@@ -339,11 +417,14 @@ section.hero-section{
     align-items: center;
   }
   .nav-ul-component{
+    display: none;
+  }
+  .nav-ul-component.mobileNav{
     display: block;
   }
   .nav-ul-component ul{
     width: 270px;
-    height: 153vh;
+    height: 100rem;
     background-color: #fff;
     display: flex;
     position: absolute;
@@ -351,18 +432,67 @@ section.hero-section{
     z-index: 1;
     right: 0;
     bottom: 0;
-    padding: 0;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 5rem 2rem;
+    line-height: 3;
   }
+  ul.feature-component-options.featureBtn li{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  ul.company-component-options.companyBtn li{
+    display: flex;
+    align-items: center;
+    padding: 0 ;
+    margin : 0;
+  }
+ul.features-component-options.featureBtn{
+    padding: 0;
+    margin: 0;
+    height: 33vh;
+    position: inherit;
+    width: 89%;
+    box-shadow: none;
+}
+ul.company-component-options.companyBtn{
+    padding: 1px 46px;
+    margin: 0;
+    width: 110%;
+    height: 24vh;
+    position: inherit;
+    box-shadow: none;
+}
   .menu-icon{
     display: block;
-    justify-content: space-between;
+    z-index: 3;
+  }
+  nav div.menu-icon a.menuBtn img.humBurger{
+    position: absolute;
+    top: 30px;
+    right: 17px;
   }
   .btn{
-    display: none;
-  }
+     display: none;
+}
+div#mobile-btn{
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem; 
+}
+div#mobile-btn .login-btn{
+  background-color: #fff;
+  padding: 0;
+  padding-bottom :1rem;
+  margin-right: 24px;
+}
+div#mobile-btn .reg-btn{
+  width: 12rem ;
+
+}
   section.hero-section{
     display: flex;
     flex-direction: column-reverse;
@@ -378,9 +508,15 @@ section.hero-section{
     width: 100%;
     display: block;
   }
+  div.mobile-closeBtn{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 34px;
+    right: 22px;
+  }
   .hero-content{
   width: 100%;
-  /*position: relative;*/
   padding: 0 0.5rem;
   }
   .hero-content h1{
