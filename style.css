@@ -227,7 +227,13 @@ div#mobile-btn{
    	width: 8rem;
    	padding-left: 1.7rem;
    }
-
+div.attribution{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    padding-top: 5rem;
+}
 
 @media screen and (max-width: 375px){
   body{
@@ -398,6 +404,13 @@ div#mobile-btn .reg-btn{
    #maker{
     width: 6rem;
    }
+   div.attribution{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    padding-top: 7rem;
+ }
 }
 
 @media screen and (max-width: 425px){
@@ -569,6 +582,13 @@ div#mobile-btn .reg-btn{
    #maker{
     width: 6.5rem;
    }
+   div.attribution{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    padding-top: 7rem;
+ }
 }
 
 
