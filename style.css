@@ -370,7 +370,12 @@ div#mobile-btn .reg-btn{
     width: 100%; 
   }
   .main-btn{
-    padding: 2rem 6.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
   }
   .hero-btn{
     width: 155px;
@@ -548,7 +553,12 @@ div#mobile-btn .reg-btn{
     width: 100%; 
   }
   .main-btn{
-    padding: 2rem 6.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
   }
   .hero-btn{
     width: 155px;
